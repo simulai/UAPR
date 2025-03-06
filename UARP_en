@@ -1,0 +1,124 @@
+UAPR (Universal Abstraction Penetration Rate) Standard Test
+
+**1. Test Objective**  
+The UAPR (Universal Abstraction Penetration Rate) evaluates a large model's ability to penetrate abstract concepts when processing cross-cultural condensed expressions. It comprehensively assesses cognitive and reasoning capabilities through four stages: literal comprehension, deep semantic generation, meta-cultural analysis, and mathematical abstraction.
+
+---
+
+**2. Hierarchical Logic**  
+The UAPR categorizes model outputs into five hierarchical levels to measure abstract reasoning and inference abilities:
+
+- **L1 (Surface-Level Connection)**  
+  *Definition*: Based solely on literal meaning or formal continuity, without deeper semantic or contextual knowledge.  
+  *Example*: Input "Apple" → Output "Fruit".
+
+- **L2 (Semantic Leap)**  
+  *Definition*: Utilizes metaphor, analogy, or cross-domain semantic associations to demonstrate basic abstract reasoning.  
+  *Example*: Input "Time is money" → Output "Time should be cherished".
+
+- **L3 (Symbolic Reconstruction)**  
+  *Definition*: Reconstructs symbolic systems by integrating cultural context, historical allusions, or sociological significance to demonstrate deeper understanding.  
+  *Example*: Input "Dragon" → Output "A symbol of power and auspiciousness in Chinese culture".
+
+- **L4 (Meta-Cultural Reconstruction)**  
+  *Definition*: Analyzes and reinterprets cultural phenomena through metalinguistic and meta-cultural perspectives, revealing underlying commonalities and differences.  
+  *Example*: Input "Dragon vs. dragon" → Output "Eastern dragons symbolize good fortune, while Western dragons represent evil, reflecting cultural divergences in perceiving natural forces".
+
+- **L5 (Mathematical Abstraction)**  
+  *Definition*: Translates abstract linguistic or cultural phenomena into mathematical descriptions to reveal structural patterns and universal laws.  
+  *Example*: Input "The Hero’s Journey" → Output "The narrative structure can be modeled as a directed graph, with nodes representing stages and edges representing transitions".
+
+---
+
+**3. Calculation Formula**  
+The UAPR score is calculated using a weighted sum of outputs across levels:  
+\[
+UAPR = \sum_{i=1}^{n} (L_i \cdot W_i)
+\]  
+*Weight Assignments*:  
+- L1: 0 (No abstract capability, no score)  
+- L2: 1.5 (Basic abstract capability)  
+- L3: 3 (Intermediate abstract capability)  
+- L4: 4.5 (Advanced abstract capability)  
+- L5: 6 (Top-tier abstract capability)  
+
+---
+
+**4. Testing Procedure**  
+- **Sample Set**: 50 cross-cultural expressions (proverbs, memes, narrative structures, etc.) presented in their original language.  
+- **Task**: For each input, generate 5 outputs corresponding to L1–L5, totaling 250 responses.  
+- **Annotation**: Human evaluators classify outputs by level, aided by semantic embeddings, knowledge graphs, or mathematical models when necessary.  
+
+---
+
+**Cross-Cultural Expression Dataset (50 Items)**  
+
+**English (Western)**  
+- "This is fine" (meme)  
+- "Distracted boyfriend" (meme)  
+- "The early bird catches the worm" (proverb)  
+- "Trojan Horse" (allusion)  
+- "Spill the tea" (slang)  
+- "One does not simply walk into Mordor" (meme)  
+- "A penny for your thoughts" (idiom)  
+- "Breaking the internet" (slang)  
+- "Bite the bullet" (proverb)  
+- "Salt Bae" (meme)  
+
+**Chinese Culture**  
+- 一箭双雕 (idiom)  
+- 猪八戒照镜子——里外不是人 (riddle)  
+- 刻舟求剑 (idiom)  
+- 画蛇添足 (idiom)  
+- 泥菩萨过河 (riddle)  
+- 塞翁失马 (allusion)  
+- 金戈铁马 (idiom)  
+- 守株待兔 (idiom)  
+- 退避三舍 (allusion)  
+- 短小精悍 (idiom)  
+
+**Japanese Culture**  
+- 猿も木から落ちる (proverb)  
+- 石の上にも三年 (proverb)  
+- 猫に小判 (proverb)  
+- 七転び八起き (proverb)  
+- 縁の下の力持ち (slang)  
+- 井の中の蛙 (proverb)  
+- 身から出た錆 (proverb)  
+- 焼け石に水 (proverb)  
+- 花より団子 (slang)  
+- 尘も積もれば山となる (proverb)  
+
+**Arabic Culture**  
+- من جدّ وجد (proverb)  
+- كالمستجير من الرمضاء بالنار (proverb)  
+- الحبل الطويل يترك الحصان يرعى (proverb)  
+- كل فم له كلام (slang)  
+- الجار قبل الدار (proverb)  
+- لا تقطع الرؤوس قبل أن تتأكد من السيوف (proverb)  
+- الصبر مفتاح الفرج (proverb)  
+- كالبعير في الصحراء (slang)  
+- من حفر حفرة لأخيه وقع فيها (proverb)  
+- العين بصيرة واليد قصيرة (proverb)  
+
+**Latin Cultures (Spanish/French/Latin)**  
+- *Petit à petit, l’oiseau fait son nid* (French proverb)  
+- *Carpe diem* (Latin allusion)  
+- *A cada cerdo le llega su San Martín* (Spanish proverb)  
+- *Entre deux chaises, on tombe par terre* (French proverb)  
+- *El que mucho abarca, poco aprieta* (Spanish proverb)  
+- *In vino veritas* (Latin proverb)  
+- *Plus ça change, plus c’est la même chose* (French proverb)  
+- *A río revuelto, ganancia de pescadores* (Spanish proverb)  
+- *De tal palo, tal astilla* (Spanish proverb)  
+- *Qui sème le vent récolte la tempête* (French proverb)  
+
+---
+
+**5. Example**  
+Input: Chinese idiom **画蛇添足** (Huà Shé Tiān Zú)  
+- **L1**: "A snake was drawn." (Literal description)  
+- **L2**: "Doing unnecessary actions." (Metaphorical abstraction)  
+- **L3**: "Originates from *Strategies of the Warring States*, critiquing superfluous efforts." (Cultural/historical context)  
+- **L4**: "Parallels Western *Gilding the lily*, both warning against excessive embellishment." (Cross-cultural comparison)  
+- **L5**: "Modeled using game theory’s *diminishing marginal utility* framework." (Mathematical abstraction)
