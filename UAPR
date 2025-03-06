@@ -4,6 +4,112 @@ UAPR（Universal Abstraction Penetration Rate）旨在评估大模型在处理�
 
 
 UAPR (Universal Abstraction Penetration Rate) Standard Test
-
 UAPR (Universal Abstraction Penetration Rate) is designed to evaluate the ability of large models to penetrate abstract concepts when processing cross-cultural condensed expressions. It covers everything from literal comprehension to deep semantic generation, meta-level analysis, and mathematical expression, comprehensively assessing the model’s cognitive and reasoning abilities.
 
+1. 测试目标
+UAPR（Universal Abstraction Penetration Rate）旨在评估大模型在处理跨文化浓缩表达时的抽象穿透能力，涵盖从字面理解到深层语义生成，再到元层次分析和数学化表达，全面衡量模型的认知和推理能力。
+
+2. 分层逻辑
+UAPR将模型的输出分为五个层次，逐步衡量其抽象和推理能力：
+
+L1（表层连接）
+定义：仅基于字面意思或形式上的连续性，不涉及深层语义或背景知识。
+示例：输入“苹果”，输出“水果”。
+L2（语义跨越）
+定义：通过隐喻、类比或跨领域的语义关联，展现一定的抽象推理能力。
+示例：输入“时间是金钱”，输出“时间需要珍惜”。
+L3（符号重构）
+定义：结合文化背景、历史典故或社会意义，重新构建符号系统，体现深层理解。
+示例：输入“龙”，输出“中国文化中的权力与吉祥象征”。
+L4（元文化重构）
+定义：通过元语言和元文化的视角，分析和重构文化现象，揭示其深层共性和差异。
+示例：输入“龙与dragon”，输出“东方龙象征吉祥，西方dragon象征邪恶，反映文化对自然力量的不同认知”。
+L5（数学化抽象表达）
+定义：将语言和文化现象的抽象表达转化为数学描述，揭示其深层结构和规律。
+示例：输入“英雄之旅”，输出“英雄之旅的叙事结构可以用有向图模型化，节点代表阶段，边代表过渡”。
+3. 计算公式
+UAPR通过加权计算模型输出在不同层次的表现，公式如下：
+
+
+
+权重说明：
+L1 = 0（无抽象能力，不计分）
+L2 = 1.5（初级抽象能力）
+L3 = 3（中级抽象能力）
+L4 = 4.5（高级抽象能力）
+L5 = 6（顶级抽象能力）
+4. 测试流程
+
+样本：选取50个跨文化表达（如谚语、meme、叙事结构等），以原语言输入，输出语言不限。
+任务：针对每个样本生成5个输出，分别对应L1至L5层次，总计250个回答。
+标注：由人工评判每个输出的层次归属，必要时参考语义嵌入、知识图谱或数学模型。
+跨文化样本数据集（50个，原语言版）：
+
+英语文化（欧美）
+This is fine (meme)
+Distracted boyfriend (meme)
+The early bird catches the worm (谚语)
+Trojan Horse (典故)
+Spill the tea (俚语)
+One does not simply walk into Mordor (meme)
+A penny for your thoughts (俗话)
+Breaking the internet (俚语)
+Bite the bullet (谚语)
+Salt Bae (meme)
+
+中华文化（中国）
+一箭双雕 (成语)
+猪八戒照镜子——里外不是人 (歇后语)
+刻舟求剑 (成语)
+画蛇添足 (成语)
+泥菩萨过河 (歇后语)
+塞翁失马 (典故)
+金戈铁马 (成语)
+守株待兔 (成语)
+退避三舍 (典故)
+短小精悍 (成语)
+
+日本文化
+猿も木から落ちる (谚语)
+石の上にも三年 (谚语)
+猫に小判 (谚语)
+七転び八起き (谚语)
+縁の下の力持ち (俗语)
+井の中の蛙 (谚语)
+身から出た錆 (谚语)
+焼け石に水 (谚语)
+花より団子 (俗语)
+塵も積もれば山となる (谚语)
+
+阿拉伯文化
+من جدّ وجد (谚语)
+كالمستجير من الرمضاء بالنار (谚语)
+الحبل الطويل يترك الحصان يرعى (谚语)
+كل فم له كلام (俗语)
+الجار قبل الدار (谚语)
+لا تقطع الرؤوس قبل أن تتأكد من السيوف (谚语)
+الصبر مفتاح الفرج (谚语)
+كالبعير في الصحراء (俗语)
+من حفر حفرة لأخيه وقع فيها (谚语)
+العين بصيرة واليد قصيرة (谚语)
+
+拉丁文化（西班牙语/法语/拉丁语）
+Petit à petit, l’oiseau fait son nid (法语谚语)
+Carpe diem (拉丁语典故)
+A cada cerdo le llega su San Martín (西班牙语谚语)
+Between two stools, one falls to the ground (法语谚语)
+El que mucho abarca, poco aprieta (西班牙语谚语)
+In vino veritas (拉丁语谚语)
+Plus ça change, plus c’est la même chose (法语谚语)
+A río revuelto, ganancia de pescadores (西班牙语谚语)
+De tal palo, tal astilla (西班牙语谚语)
+Qui sème le vent récolte la tempête (法语谚语)
+5. 范例
+以下是一个完整的范例，展示如何对一个输入进行L1至L5的输出：
+
+输入：成语“画蛇添足”
+L1输出：“画了一条蛇。”（仅字面描述）
+L2输出：“做了多余的事。”（提炼隐喻）
+L3输出：“源自《战国策》，讽刺不必要的举动。”（结合历史典故）
+L4输出：“与西方‘Gilding the lily’类似，都警示过度装饰。”（跨文化比较）
+L5输出：“可用博弈论中的‘边际效益递减’模型化。”（数学化表达）
