@@ -1,4 +1,4 @@
-UAPR（Universal Abstraction Penetration Rate）
+UAPR通用抽象穿透率标准测试
 旨在评估大模型在处理跨文化浓缩表达时的抽象穿透能力，涵盖从字面理解到深层语义生成，再到元层次分析和数学化表达，全面衡量模型的认知和推理能力。
 
 
